@@ -1,0 +1,768 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#outer{
+    position: absolute;
+    width: 100%;
+    height: 620px;
+    background-image: url(pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#inner1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    background-color:#11617a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+h2 span{
+    font-weight: 200;
+    color: white;
+    font-size: 25px;
+    margin-left: 12px;
+}
+.navigation a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 35px;
+    margin-right: 25px;
+    transition: 3s;}
+.navigation a:hover{
+    border-bottom: 2px solid white;
+}
+#inner2 {
+    margin-top: 185px;animation: fadeIn 5s ease;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#companyname{
+    margin-left: 130px;
+    font-size: 55px;
+    color: whitesmoke;animation: fadeIn 1s ease;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.heading1{
+    margin-top:15px ;
+    margin-left: 190px;
+    font-size: 25px;
+    color: aliceblue;
+}
+.para1{
+    margin-top: 20px;
+    color: whitesmoke;
+    line-break: auto;
+    font-size: 15px;
+    margin-left:220px ;
+    
+}
+.btn1{
+    color: #043c5d;
+    background:#8ba0b1;
+    margin-top: 35px;
+    margin-left:330px ;
+    padding: 16px;
+    border-radius: 30px;
+    border-color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 5s;
+} 
+.btn1:hover{
+    background-color:whitesmoke;
+    color: #043c5d;
+}
+
+#wholedocument{
+    font-family:'Roboto' , sans-serif;
+    background-color: #f2f2f2;
+}
+#aboutus{
+    padding-top: 650px;
+    
+}
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #16778f;
+}
+.heading p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #16778f;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+    background-color: #3e8e41;
+}
+@media screen and (max-width: 768px) {
+    .heading{
+        padding: 0px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+}
+.card-container{
+    max-width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
+.card{
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    color: #026aa6;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+.card-content p{
+    color: #333;
+    font-size: 17px;
+    line-height: 1.6;
+}
+.card-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #16778f;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+    .card{
+        flex: 100%;}}
+
+
+
+
+.container1{
+    height: 80vh;
+    width: 100%;
+   padding: 0 8%;
+       
+        }
+ .container1 h1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;  
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+        }
+     .container1 h1::after {
+        content: "";  
+        width: 200px;
+        height: 4px;
+        display: block;
+        margin: 0 auto;
+        background-color: #16778f;  
+        }
+    .container1 .row{
+         display: grid;
+         grid-template-columns: repeat(auto-fit,minmax(250px,1fr)) ;
+         grid-gap: 30px;
+        
+        }
+    .container1 .row .Service{
+        background: #fff;
+        padding: 25px 10px;
+        text-align: center;
+        border-radius: 5px;
+        transition: .5s;
+        cursor: pointer;
+        }
+    .container1 .row .Service:hover {
+        transform: scale(1.1);
+        background: rgba(240, 255, 255, 0.615);
+        }
+    .container1 .row .Service i{
+        font-size: 40px;
+        color: aqua;
+        }
+        
+
+
+#calltoaction{
+    background-color: #11617a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height:200px;
+}
+#callheading{
+    margin-top: 25px;
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;}
+
+#callpara{
+    font-size: 18px;
+    color:white;
+    margin-bottom: 30px;
+}
+#callbtn{
+    background-color: white;
+    color: #043c5d;
+    padding: 10px 60px;
+    border: #043c5d;
+    font-size:20px;
+    font-weight: bolder;
+    transition: 3s;
+    margin-bottom: 10px;
+}
+#callbtn:hover{
+    background-color: #043c5d;
+    color: #f2f2f2;
+}
+                  
+
+
+
+#ourportfolio{
+    padding-top: 80px;
+    
+    
+}
+.ourportfoliodiv1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.ourportfoliodiv1 h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.ourportfoliodiv1 h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #16778f;
+}
+.ourportfoliodiv1 p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+.ourportfolioimg1{
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 25px;}
+
+
+
+#team{
+    padding-top: 80px;
+    
+}
+#team2{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+#team2 h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+#team2 h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #16778f;
+}
+#team2 p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+.teamouter4{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+}
+.teaminner4{
+    text-align: center;
+    box-shadow: 0 7px 15px #043c5d; 
+}
+.teaminner4 h6{
+    font-size: 20px;
+    color: #043c5d;
+    font-weight: 800;
+}
+.teaminner4 p{
+    color: #666;
+    font-weight: bold;
+    
+}
+.teaminner4 a{
+    color: #043c5d;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+    background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#03a9f5 30%,#03a9f5 100%);
+}
+.contactUs h2{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contactUs .tittle h2{
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.box{
+    position: relative;
+    margin-top: 20px;
+}
+.contact h3{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/* form */
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    color: #18b7ff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #585353;
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.contact_info{
+    background: #fff;
+}
+
+
+
+
+@media (max-width:480px){
+    #outer{
+        height: 400px;
+        background-size: contain;
+        }
+        #inner1{
+            padding:4px;
+}
+        h2 span{
+         font-size: 17px;
+            margin-left: 8px;
+        }  
+        #inner2 {
+            margin-top: 60px;
+        }
+        #companyname{
+            margin-left: 20px
+            ;
+            font-size: 25px;
+        }
+        .heading1{
+            margin-left: 28px;
+            font-size: 13px;
+        }
+        .para1{
+            margin-left: 28px;
+            font-size: 10px;
+        }
+        .btn1{
+    margin-left: 75px;
+    margin-top: 20px;
+    padding: 10px;
+        }
+        #aboutus{
+            padding-top: 300px;}
+            .sci{
+                margin-top: 17px;
+                 } 
+                 .contactdiv2 i{
+                    margin: 6px;
+                
+                }
+                .formBox .row50{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    gap: 2px;
+                }
+                .inputBox{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    margin-bottom: 1px;
+                   
+                } 
+                .inputBox textarea{
+                    
+                    
+                    min-height: 170px;
+                    margin-bottom: 9px;
+                }     }
+                @media (max-width:640px){
+                    #outer{
+                        height: 400px;
+                        background-size: contain;
+                        }
+                        #inner1{
+                            padding:4px;
+                }
+                        h2 span{
+                         font-size: 17px;
+                            margin-left: 8px;
+                        }  
+                        #inner2 {
+                            margin-top: 60px;
+                        }
+                        #companyname{
+                            margin-left: 20px
+                            ;
+                            font-size: 25px;
+                        }
+                        .heading1{
+                            margin-left: 28px;
+                            font-size: 13px;
+                        }
+                        .para1{
+                            margin-left: 28px;
+                            font-size: 10px;
+                        }
+                        .btn1{
+                    margin-left: 75px;
+                    margin-top: 20px;
+                    padding: 10px;
+                        }
+                        #aboutus{
+                            padding-top: 340px;}
+                            .sci{
+                                margin-top: 17px;
+                                 } 
+                                 .contactdiv2 i{
+                                    margin: 6px;
+                                
+                                }
+                                .formBox .row50{
+                                    display: flex;
+                                    flex-direction: column;
+                                    
+                                    gap: 2px;
+                                }
+                                .inputBox{
+                                    display: flex;
+                                    flex-direction: column;
+                                    
+                                    margin-bottom: 1px;
+                                   
+                                } 
+                                .inputBox textarea{
+                                    
+                                    
+                                    min-height: 170px;
+                                    margin-bottom: 9px;
+                                }    
+                                .container1{
+                                    height: 50vh; } 
+                                    .contactdiv2{
+                                       
+                                        width: 600px;
+                         }
+                        .contactdiv3 img{width: 600px;}} 
+                        
+                        @media (max-width:768px){
+                            #outer{
+                                height: 400px;
+                                background-size: contain;
+                                }
+                                #inner1{
+                                    padding:8px;
+                        }
+                                h2 span{
+                                 font-size: 25px;
+                                    margin-left: 8px;
+                                }  
+                                #inner2 {
+                                    margin-top: 110px;
+                                    
+                                }
+                                #companyname{
+                                    margin-left: 35px
+                                    ;
+                                    font-size: 37px;
+                                }
+                                .heading1{
+                                    margin-left: 50px;
+                                    font-size: 18px;
+                                }
+                                .para1{
+                                    margin-left: 40px;
+                                    font-size: 15px;
+                                }
+                                .btn1{
+                            margin-left: 150px;
+                            margin-top: 20px;
+                            padding: 10px;
+                                }
+                                #aboutus{
+                                    padding-top: 450px;}
+                                    .sci{
+                                        margin-top: 17px;
+                                         } 
+                                         .contactdiv2 i{
+                                            margin: 6px;
+                                        
+                                        }
+                                        .formBox .row50{
+                                            display: flex;
+                                            flex-direction: column;
+                                            
+                                            gap: 2px;
+                                        }
+                                        .inputBox{
+                                            display: flex;
+                                            flex-direction: column;
+                                            
+                                            margin-bottom: 1px;
+                                           
+                                        } 
+                                        .inputBox textarea{
+                                            
+                                            
+                                            min-height: 170px;
+                                            margin-bottom: 9px;
+                                        }    
+                                        .container1{
+                                            height: 50vh; } 
+                                            .contactdiv2{
+                                               
+                                                width: 600px;
+                                 }
+                                .contactdiv3 img{width: 600px;}} 
+                                
+@media (max-width:1283px){
+    .container1{
+        height: 35vh;
+}}

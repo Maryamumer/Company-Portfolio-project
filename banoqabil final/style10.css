@@ -1,0 +1,132 @@
+#team{
+    padding-top: 40px;
+    
+}
+#team2{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+#team2 h1{
+    font-size: 50px;
+    color: #000;
+    
+    position: relative;
+    animation: slideIn 3s ease;
+
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#team2 h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #16778f;
+}
+#team2 p{
+    font-size: 18px;
+    color: #666;
+    animation: slideIn 3s ease;
+
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+.teamouter4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 80px; animation: slideIn 3s ease;
+
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+}
+.teaminner4{
+    text-align: center;
+    box-shadow: 0 7px 15px #043c5d; 
+}
+.teaminner4 h6{
+    font-size: 20px;
+    color: #043c5d;
+    font-weight: 800;
+}
+.teaminner4 p{
+    color: #666;
+    font-weight: bold;
+    padding-top: 0.00001px;
+    
+}
+.teaminner4 a{
+    color: #043c5d;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+
+
+
+#inner1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    background-color:#11617a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 20px;
+
+}
+h2 span{
+    font-weight: 200;
+    color: white;
+    font-size: 25px;
+    margin-left: 12px;
+}
+.navigation a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 35px;
+    margin-right: 25px;
+    transition: 3s;}.navigation a:hover{
+        border-bottom: 2px solid white;
+    }        

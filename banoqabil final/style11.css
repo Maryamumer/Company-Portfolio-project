@@ -1,0 +1,147 @@
+.contactdiv1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+     background-color: #16778f;
+     padding-top: 50px;
+     padding-bottom: 50px;
+ 
+ }
+ .contactdiv2{
+         background-color:#0e3959;
+         width: 500px;
+         height: 300px;
+         padding: 10px
+     
+ }
+ .contactdiv2 h2{
+     color: #fff;
+     text-align: center;
+     font-size: 30px;
+ 
+ }
+ .contactdiv2 p{
+     color: #fff;
+     display: inline;
+     margin-left: 10px;
+ 
+ }
+ .contactdiv2 i{
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 3rem;
+     height: 3rem;
+     background: transparent;
+     border: .2rem solid #16778f;
+     border-radius: 50%;
+     font-size: 1.5em;
+     color: aqua;
+     margin: 8px;
+ 
+ }
+ .sci{
+     margin-top: 25px;
+     display: flex;
+     margin-left: 15px;
+ }
+ .sci li{
+     list-style: none;
+     margin-right: 15px;
+ }
+ .sci li a{
+     color:aqua;
+     font-size: 2em;
+   
+ }
+ 
+ 
+ 
+ 
+ .contactUs{
+     margin-top: 80px;
+     margin-bottom: 50px;
+     position: relative;
+     width: 100%;
+     padding: 20px 100px;
+     background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#16778f 30%,#18b7ff 100%);
+     padding-bottom: 0.1px;
+ }
+ .contactUs h2{
+     font-family: 'Poppins', sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2em;
+ }
+ .contactUs .tittle h2{
+     color: #fff;
+     font-weight: 500;
+ }
+ 
+ .contact{
+     padding: 40px;
+     background: #fff;
+     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+ }
+ .box{
+     position: relative;
+     margin-top: 20px;
+ }
+ .contact h3{
+     color: #0e3959;
+     font-weight: 500;
+     font-size: 1.4em;
+     margin-bottom: 10px;
+ }
+ /* form */
+ .formBox{
+     position: relative;
+     width: 100%;
+ }
+ .formBox .row50{
+     display: flex;
+     gap: 20px;
+ }
+ .inputBox{
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 10px;
+     width: 50%;
+ }
+ .formBox .row100 .inputBox{
+     width: 100%;
+ }
+ .inputBox span{
+     color: #18b7ff;
+     margin-top: 10px;
+     margin-bottom: 5px;
+     font-weight: 500;
+ }
+ .inputBox input{
+     padding: 10px;
+     font-size: 1.1em;
+     outline: none;
+     border: 1px solid #585353;
+ }
+ .inputBox textarea{
+     padding: 10px;
+     font-size: 1.1em;
+     outline: none;
+     border: 1px solid #333;
+     resize: none;
+     min-height: 220px;
+     margin-bottom: 10px;
+ }
+ .inputBox input[type="submit"]{
+     background: #ff578b;
+     color: #fff;
+     border: none;
+     font-size: 1.1em;
+     max-width: 120px;
+     font-weight: 500;
+     cursor: pointer;
+     padding: 14px 15px;
+ }
+ 
+ 

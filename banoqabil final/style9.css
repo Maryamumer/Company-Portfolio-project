@@ -1,0 +1,328 @@
+#ourportfolio{
+    padding-top: 40px;
+    
+    
+}
+.ourportfoliodiv1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    animation: slideIn 3s ease;
+
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.ourportfoliodiv1 h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+    animation: slideIn 3s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.ourportfoliodiv1 h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #16778f;
+}
+.ourportfoliodiv1 p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+.ourportfolioimg1{
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     
+     margin-top: 25px;animation: slideIn 3s ease;
+
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     #inner1{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px;
+        background-color:#11617a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        height: 20px;
+    
+    }
+    h2 span{
+        font-weight: 200;
+        color: white;
+        font-size: 25px;
+        margin-left: 12px;
+    }
+    .navigation a{
+        color: white;
+        font-size: 17px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #fff;
+        margin-left: 35px;
+        margin-right: 25px;
+        transition: 3s;}.navigation a:hover{
+            border-bottom: 2px solid white;
+        }        
+
+@media(max-width:768px){
+    .ourportfolioimg1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .ourportfolioimg1 img{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media (max-width:480px){
+    #outer{
+        height: 400px;
+        background-size: contain;
+        }
+        #inner1{
+            padding:4px;
+}
+        h2 span{
+         font-size: 17px;
+            margin-left: 8px;
+        }  
+        #inner2 {
+            margin-top: 60px;
+        }
+        #companyname{
+            margin-left: 20px
+            ;
+            font-size: 25px;
+        }
+        .heading1{
+            margin-left: 28px;
+            font-size: 13px;
+        }
+        .para1{
+            margin-left: 28px;
+            font-size: 10px;
+        }
+        .btn1{
+    margin-left: 75px;
+    margin-top: 20px;
+    padding: 10px;
+        }
+        #aboutus{
+            padding-top: 300px;}
+            .sci{
+                margin-top: 17px;
+                 } 
+                 .contactdiv2 i{
+                    margin: 6px;
+                
+                }
+                .formBox .row50{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    gap: 2px;
+                }
+                .inputBox{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    margin-bottom: 1px;
+                   
+                } 
+                .inputBox textarea{
+                    
+                    
+                    min-height: 170px;
+                    margin-bottom: 9px;
+                }     }
+                @media (max-width:640px){
+                    #outer{
+                        height: 400px;
+                        background-size: contain;
+                        }
+                        #inner1{
+                            padding:4px;
+                }
+                        h2 span{
+                         font-size: 17px;
+                            margin-left: 8px;
+                        }  
+                        #inner2 {
+                            margin-top: 60px;
+                        }
+                        #companyname{
+                            margin-left: 20px
+                            ;
+                            font-size: 25px;
+                        }
+                        .heading1{
+                            margin-left: 28px;
+                            font-size: 13px;
+                        }
+                        .para1{
+                            margin-left: 28px;
+                            font-size: 10px;
+                        }
+                        .btn1{
+                    margin-left: 75px;
+                    margin-top: 20px;
+                    padding: 10px;
+                        }
+                        #aboutus{
+                            padding-top: 340px;}
+                            .sci{
+                                margin-top: 17px;
+                                 } 
+                                 .contactdiv2 i{
+                                    margin: 6px;
+                                
+                                }
+                                .formBox .row50{
+                                    display: flex;
+                                    flex-direction: column;
+                                    
+                                    gap: 2px;
+                                }
+                                .inputBox{
+                                    display: flex;
+                                    flex-direction: column;
+                                    
+                                    margin-bottom: 1px;
+                                   
+                                } 
+                                .inputBox textarea{
+                                    
+                                    
+                                    min-height: 170px;
+                                    margin-bottom: 9px;
+                                }    
+                                .container1{
+                                    height: 50vh; } 
+                                    .contactdiv2{
+                                       
+                                        width: 600px;
+                         }
+                        .contactdiv3 img{width: 600px;}} 
+                        
+                        @media (max-width:768px){
+                            #outer{
+                                height: 400px;
+                                background-size: contain;
+                                }
+                                #inner1{
+                                    padding:8px;
+                        }
+                                h2 span{
+                                 font-size: 25px;
+                                    margin-left: 8px;
+                                }  
+                                #inner2 {
+                                    margin-top: 110px;
+                                    
+                                }
+                                #companyname{
+                                    margin-left: 35px
+                                    ;
+                                    font-size: 37px;
+                                }
+                                .heading1{
+                                    margin-left: 50px;
+                                    font-size: 18px;
+                                }
+                                .para1{
+                                    margin-left: 40px;
+                                    font-size: 15px;
+                                }
+                                .btn1{
+                            margin-left: 150px;
+                            margin-top: 20px;
+                            padding: 10px;
+                                }
+                                #aboutus{
+                                    padding-top: 450px;}
+                                    .sci{
+                                        margin-top: 17px;
+                                         } 
+                                         .contactdiv2 i{
+                                            margin: 6px;
+                                        
+                                        }
+                                        .formBox .row50{
+                                            display: flex;
+                                            flex-direction: column;
+                                            
+                                            gap: 2px;
+                                        }
+                                        .inputBox{
+                                            display: flex;
+                                            flex-direction: column;
+                                            
+                                            margin-bottom: 1px;
+                                           
+                                        } 
+                                        .inputBox textarea{
+                                            
+                                            
+                                            min-height: 170px;
+                                            margin-bottom: 9px;
+                                        }    
+                                        .container1{
+                                            height: 50vh; } 
+                                            .contactdiv2{
+                                               
+                                                width: 600px;
+                                 }
+                                .contactdiv3 img{width: 600px;}} 
+                                
+@media (max-width:1283px){
+    .container1{
+        height: 35vh;
+}}
+

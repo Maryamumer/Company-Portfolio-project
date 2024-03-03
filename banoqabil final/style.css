@@ -1,0 +1,1169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#outer{
+    position: absolute;
+    width: 100%;
+    height: 620px;
+    background-image: url(pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slideBackground 2s linear infinite;
+
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+#inner1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    background-color:#11617a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+h2 span{
+    font-weight: 200;
+    color: white;
+    font-size: 25px;
+    margin-left: 12px;
+}
+.navigation a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 35px;
+    margin-right: 25px;
+    transition: 3s;}
+@media (max-width: 768px) {
+    .navigation a{
+        font-size: 13px;
+        display: none;
+        margin-left: 10px;
+    }
+}
+.navigation a:hover{
+    border-bottom: 2px solid white;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#inner2 {
+    margin-top: 185px; animation: slideIn 3s ease;
+
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#companyname{
+    margin-left: 130px;
+    font-size: 55px;
+    color: whitesmoke;   animation: fadeIn 1s ease;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.heading1{
+    margin-top:15px ;
+    margin-left: 190px;
+    font-size: 25px;
+    color: aliceblue;
+}
+.para1{
+    margin-top: 20px;
+    color: whitesmoke;
+    line-break: auto;
+    font-size: 15px;
+    margin-left:220px ;
+    animation: fadeIn 1s ease;
+
+}
+.btn1{
+    color: #043c5d;
+    background:#8ba0b1;
+    margin-top: 35px;
+    margin-left:330px ;
+    padding: 16px;
+    border-radius: 30px;
+    border-color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 5s;
+    animation: pulse 2s infinite;
+
+} 
+.btn1:hover{
+    background-color:whitesmoke;
+    color: #043c5d; animation: none;
+
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+}
+}
+@media only screen and (max-width: 768px) {
+    #outer {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    #companyname {
+        margin-left: 100px;
+        font-size: 40px;
+    }
+
+    .heading1 {
+        margin-left: 120px;
+        font-size: 20px;
+    }
+
+    .para1 {
+        margin-left: 135px;
+        font-size: 13px;
+    }
+
+    .btn1 {
+        margin-left:230px;}
+    #inner2{
+        margin-top: 135px;
+    }
+}
+
+
+
+
+#wholedocument{
+    font-family:'Roboto' , sans-serif;
+    background-color: #f2f2f2;
+    
+}
+#aboutus{
+    padding-top: 650px;
+    
+}
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+    animation: slideIn 3s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #16778f;
+}
+.heading p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    animation: slideIn 3s ease;
+
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #16778f;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+    background-color: #3e8e41;
+}
+@media screen and (max-width: 768px) {
+    .heading{
+        padding: 0px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+}
+.card-container{
+    max-width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    animation: slideIn 3s ease;
+
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card{
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    color: #026aa6;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+.card-content p{
+    color: #333;
+    font-size: 17px;
+    line-height: 1.6;
+}
+.card-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #16778f;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+    .card{
+        flex: 100%;}}
+
+
+
+
+.container1{
+    height: 80vh;
+    width: 100%;
+   padding: 0 8%;
+       
+        }
+
+ .container1 h1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;  
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+    animation: slideIn 3s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+        
+     .container1 h1::after {
+        content: "";  
+        width: 200px;
+        height: 4px;
+        display: block;
+        margin: 0 auto;
+        background-color: #16778f;  
+        }
+    .container1 .row{
+         display: grid;
+         grid-template-columns: repeat(auto-fit,minmax(250px,1fr)) ;
+         grid-gap: 30px;
+        
+        }
+    .container1 .row .Service{
+        background: #fff;
+        padding: 25px 10px;
+        text-align: center;
+        border-radius: 5px;
+        transition: .5s;
+        cursor: pointer;
+        animation: slideIn 3s ease;
+
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .container1 .row .Service:hover {
+        transform: scale(1.1);
+        background: rgba(240, 255, 255, 0.615);
+        }
+    .container1 .row .Service i{
+        font-size: 40px;
+        color: aqua;
+        }
+ 
+        
+@media (max-width:768px){
+    .container1{
+        height: 130vh;
+        width: 100%;
+       padding: 0 8%;
+           
+            }
+    
+}
+
+
+#calltoaction{
+    background-color: #11617a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:200px;
+}
+#callheading{
+    margin-top: 25px;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;}
+
+#callpara{
+    font-size: 18px;
+    color:white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#callbtn{
+    background-color: white;
+    color: #043c5d;
+    padding: 10px 60px;
+    border: #043c5d;
+    font-size:20px;
+    font-weight: bolder;
+    transition: 3s;
+    margin-bottom: 10px;
+}
+#callbtn:hover{
+    background-color: #043c5d;
+    color: #f2f2f2;
+}
+                  
+
+
+
+#ourportfolio{
+    padding-top: 80px;
+    
+    
+}
+.ourportfoliodiv1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    animation: slideIn 3s ease;
+
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+.ourportfoliodiv1 h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+    animation: slideIn 3s ease;
+
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+.ourportfoliodiv1 h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #16778f;
+}
+.ourportfoliodiv1 p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+.ourportfolioimg1{
+     width: 100%;
+     display: flex;
+     gap: 10px;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     margin-top: 25px;
+     animation: slideIn 3s ease;
+
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+    }
+@media (max-width:768px){
+   
+    #callbtn{
+        padding: 0px;
+    }
+    .ourportfolioimg1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 25px;
+        }
+     .ourportfolioimg1 img{
+width: 300px;
+height: 300px;
+padding-bottom: 20px;
+
+        }}
+@media (max-width:320px) {
+    #calltoaction{
+        height: 400px;
+    }
+    #callheading{
+        margin-bottom: 10px;
+    }
+}
+
+#team{
+    padding-top: 80px;
+    animation: slideIn 3s ease;
+
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    
+}
+#team2{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    
+}
+#team2 h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+#team2 h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #16778f;
+}
+#team2 p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.teamouter4{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+        animation: slideIn 3s ease;
+
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+}
+.teaminner4{
+    text-align: center;
+    box-shadow: 0 7px 15px #043c5d; 
+}
+.teaminner4 h6{
+    font-size: 20px;
+    color: #043c5d;
+    font-weight: 800;
+}
+.teaminner4 p{
+    color: #666;
+    font-weight: bold;
+    
+}
+.teaminner4 a{
+    color: #043c5d;
+    text-decoration: none;
+    font-weight: bolder;
+}
+@media (max-width:768px){
+    .teamouter4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+       
+}
+.teaminner4{
+    margin-bottom: 30px;
+   width: 100%;
+}
+.teaminner4 img{
+    width: 300;
+}}
+
+
+
+
+.contactdiv1{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 30px;
+    background-color: #16778f;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.contactdiv2{
+        background-color:#0e3959;
+        width: 500px;
+        height: 300px;
+        padding: 10px;
+        animation: slideIn 3s ease;
+
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+.contactdiv2 h2{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+
+}
+.contactdiv2 p{
+    color: #fff;
+    display: inline;
+    margin-left: 10px;
+
+}
+.contactdiv2 i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: .2rem solid #16778f;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: aqua;
+    margin: 8px;
+
+}
+.contactdiv3{
+    animation: slideIn 2s ease;
+
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+}
+.sci{
+    margin-top: 25px;
+    display: flex;
+    margin-left: 15px;
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a{
+    color:aqua;
+    font-size: 2em;
+  
+}
+
+@media (max-width:768px){
+    .contactdiv1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         }
+         .contactdiv2{
+           margin-bottom: 20px;
+           width: 200px;
+            /* width: 600px; */
+    }
+    .contactdiv3 img{
+        width:200px ;
+    }
+}
+
+@media (max-width:320px) {
+    .contactdiv3 img{
+        width:300px ;
+    }
+    .contactdiv2{
+        height: 332px;
+    }
+    .contactUs{
+        padding: 0px;
+    }
+}
+
+
+
+.contactUs{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    /* padding: 20px 100px; */
+    background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#16778f 30%,#18b7ff 100%);
+    padding-bottom: 0.1px;
+}
+.contactUs h2{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+.contactUs .tittle h2{
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact{
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.box{
+    position: relative;
+    margin-top: 20px;
+    width: 80%;
+    margin: auto
+    ;
+}
+.contact h3{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/* form */
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    color: #18b7ff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #585353;
+}
+.inputBox textarea{
+    padding: 5px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 5px;
+}
+.inputBox input[type="submit"]{
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+@media (max-width:320px) {
+    .inputBox{
+width: 100%;
+    }
+    .formBox .row50{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width:480px){
+    #outer{
+        height: 400px;
+        background-size: cover;
+        }
+        #inner1{
+            padding:4px;
+}
+        h2 span{
+         font-size: 17px;
+            margin-left: 8px;
+        }  
+        #inner2 {
+            margin-top: 60px;
+        }
+        #companyname{
+            margin-left: 20px
+            ;
+            font-size: 25px;
+        }
+        .heading1{
+            margin-left: 28px;
+            font-size: 13px;
+        }
+        .para1{
+            margin-left: 28px;
+            font-size: 10px;
+        }
+        .btn1{
+    margin-left: 75px;
+    margin-top: 20px;
+    padding: 10px;
+        }
+        #aboutus{
+            padding-top: 300px;}
+            .sci{
+                margin-top: 17px;
+                 } 
+                 .contactdiv2 i{
+                    margin: 6px;
+                
+                }
+                .formBox .row50{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    gap: 2px;
+                }
+                .inputBox{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    margin-bottom: 1px;
+                   
+                } 
+                .inputBox textarea{
+                    
+                    
+                    min-height: 170px;
+                    margin-bottom: 9px;
+                }     }
+                @media (max-width:640px){
+                    #outer{
+                        height: 400px;
+                        background-size: cover;
+                        }
+                        #inner1{
+                            padding:4px;
+                }
+                        h2 span{
+                         font-size: 17px;
+                            margin-left: 8px;
+                        }  
+                        #inner2 {
+                            margin-top: 60px;
+                        }
+                        #companyname{
+                            margin-left: 20px
+                            ;
+                            font-size: 25px;
+                        }
+                        .heading1{
+                            margin-left: 28px;
+                            font-size: 13px;
+                        }
+                        .para1{
+                            margin-left: 28px;
+                            font-size: 10px;
+                        }
+                        .btn1{
+                    margin-left: 75px;
+                    margin-top: 20px;
+                    padding: 10px;
+                        }
+                        #aboutus{
+                            padding-top: 340px;}
+                            .sci{
+                                margin-top: 17px;
+                                 } 
+                                 .contactdiv2 i{
+                                    margin: 6px;
+                                
+                                }
+                                .formBox .row50{
+                                    display: flex;
+                                    flex-direction: column;
+                                    
+                                    gap: 2px;
+                                }
+                                .inputBox{
+                                    display: flex;
+                                    flex-direction: column;
+                                    
+                                    margin-bottom: 1px;
+                                   
+                                } 
+                                .inputBox textarea{
+                                    
+                                    
+                                    min-height: 170px;
+                                    margin-bottom: 9px;
+                                }    
+                                .container1{
+                                    height: 80vh; } 
+                                    .contactdiv2{
+                                       
+                                        width: 600px;
+                         }
+                        .contactdiv3 img{width: 200px;}} 
+                        
+                        @media (max-width:768px){
+                            #outer{
+                                height: 400px;
+                                background-size: cover;
+                                }
+                                #inner1{
+                                    padding:8px;
+                        }
+                                h2 span{
+                                 font-size: 25px;
+                                    margin-left: 8px;
+                                }  
+                                #inner2 {
+                                    margin-top: 80px;
+                                    
+                                }
+                                #companyname{
+                                    margin-left: 35px
+                                    ;
+                                    font-size: 37px;
+                                }
+                                .heading1{
+                                    margin-left: 40px;
+                                    font-size: 18px;
+                                }
+                                .para1{
+                                    margin-left: 40px;
+                                    font-size: 15px;
+                                }
+                                .btn1{
+                            margin-left: 40px;
+                            margin-top: 20px;
+                            padding: 10px;
+                                }
+                                #aboutus{
+                                    padding-top: 450px;}
+                                    .sci{
+                                        margin-top: 17px;
+                                         } 
+                                         .contactdiv2 i{
+                                            margin: 6px;
+                                        
+                                        }
+                                        .contactdiv2
+                                        .formBox .row50{
+                                            display: flex;
+                                            flex-direction: column;
+                                            
+                                            gap: 2px;
+                                        }
+                                        .inputBox{
+                                            display: flex;
+                                            flex-direction: column;
+                                            
+                                            margin-bottom: 1px;
+                                           
+                                        } 
+                                        .inputBox textarea{
+                                            
+                                            
+                                            min-height: 170px;
+                                            margin-bottom: 9px;
+                                        }    
+                                        .container1{
+                                            height: 1400px;
+                                        margin-bottom: 200vh; } 
+                                            .contactdiv2{
+                                               
+                                                width: 300px;
+                                 }
+                                .contactdiv3 img{width: 350px;}
+                            } 
+                                
+@media (max-width:1283px){
+    .container1{
+        height: 35vh;
+}}
